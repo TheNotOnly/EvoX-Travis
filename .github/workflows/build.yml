@@ -30,7 +30,7 @@ jobs:
       run: repo init -u https://github.com/Evolution-X/manifest -b ten && sudo rm /usr/bin/repo && sudo ln -s /home/runner/work/EvoX-Travis/EvoX-Travis/.repo/repo/repo /usr/bin/repo
 
     - name: Sync Rom
-      run: repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+      run: repo sync -c --force-sync --no-clone-bundle --no-tags
 
     - name: Fetch Device
       run: ./fetchdevice.sh
