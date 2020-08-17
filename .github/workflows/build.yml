@@ -27,7 +27,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Init Rom Sources
-      run: repo init -u https://gitlab.com/EvoX/manifest -b ten
+      run: repo init -u https://github.com/Evolution-X/manifest -b ten
 
     - name: Sync Rom
       run: repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
