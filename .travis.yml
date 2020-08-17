@@ -1,0 +1,12 @@
+{
+  "language": "bash",
+  "cache": "ccache",
+  "os": [
+    "linux"
+  ],
+  "dist": "bionic",
+script:
+- ./fetchrom.sh,
+- ./fetchdevice.sh,
+- ./buildrom.sh
+}
